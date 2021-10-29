@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <div style="flex-direction: column; display: flex;">
+      <header class="MyStyle">
+        <h1>Название сайта</h1>
+      </header>
+      <main style="display: flex; min-height: 500px;">
+        <div class="MyStyle" style="min-width: 1650px;">
+          <div>
+            <h1 style="text-align: center;">
+              Решение квадратичного уравнения
+            </h1>
+          </div>
+          <div>
+            <form
+              name="equation"
+              action="javascript:calc()"
+              style="text-align: center;"
+            >
+              <input type="text" name="a" />x<sup>2</sup> +
+              <input type="text" name="b" />x + <input type="text" name="c" />=
+              0
+              <button onclick="calc()">Посчитать</button>
+            </form>
+            <div style="text-align: center;">
+              <h2>Решение:</h2>
+              <h3 id="d"></h1>
+              <h3 id="x1"></h3>
+              <h3 id="x2"></h3>
+            </div>
+          </div>
+        </div>
+        <sidebar>
+          <div class="MyDiv">
+            <a href="index.html">Главная</a>
+          </div>
+          <div class="MyDiv">
+            <a href="contacts.html">Контакты</a>
+          </div>
+          <div class="MyDiv">
+            <a href="info.html">О нас</a>
+          </div>
+          <div class="MyDiv">
+            <a href="calc.html">Калькулятор</a>
+          </div>
+        </sidebar>
+      </main>
+      <footer class="MyStyle">
+        <h1>Сделал Семён Ройтман ВИС31</h1>
+      </footer>
+    </div>
+  </body>
+  <script src="calc.js"></script>
+</html>
