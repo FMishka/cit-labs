@@ -1,0 +1,19 @@
+.nav-link {
+  color: grey;
+}
+
+#sale {
+  padding: 20px;
+}
+
+#comments {
+  padding: 20px;
+}
+
+.card {
+  border: none;
+}
+
+a {
+  border: none;
+}
